@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root{
+  --text-preset-1-size: 56px;
+  --text-preset-2-size: 24px;
+  --text-preset-3-size: 16px;
+  --text-preset-4-size: 14px;
+  --spacing-1100: 88px;
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --rose-50: #FCF8F6;
+  --rose-100: #F5EEEC;
+  --rose-400: #AD8A85;
+  --rose-500: #87635A;
+  --rose-900: #260F08;
+  --red: #C73B0F;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body{
+  font-family: "Red Hat Text", sans-serif;
+  background-color: #FCF8F6;
+}
+
+.container{
+  padding: 24px;
+  max-width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.heading.main-heading{
+  font-size: var(--spacing-500);
+  margin-bottom: 32px;
+}
+
+.products-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.product .image-container{
+  /* position: relative; */
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product .image-container .add-to-cart-btn{
+  margin-top: -22px;
+  /* position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%); */
+  font-weight: 600;
+  line-height: 18.52px;
+  font-size: var(--text-preset-4-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--rose-400);
+  background-color: #fff;
+  border-radius: 999px;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
+.product .image-container .product-image{
+  width: 100%;
+}
+
+.product .name-container{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  .category{
+    font-weight: 400;
+    line-height: 18.52px;
+    font-size: var(--text-preset-4-size);
+    color: var(--rose-500);
+  }
+  h3{
+    font-weight: 600;
+    font-size: var(--spacing-200);
+    color: var(--rose-900);
+    line-height: 21.17px;
+  }
+  .price{
+    font-size: var(--spacing-200);
+    font-weight: 600;
+    line-height: 21.17px;
+    color: var(--red);
+  }
+}
+
+.cart-container{
+  background-color: #fff;
+  padding: 24px;
+  border-radius: var(--spacing-150);
+  ul{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+    li{
+      border-bottom: 1px solid var(--rose-100);
+      padding-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3{
+        margin-bottom: 8px;
+        font-size: var(--text-preset-4-size);
+        font-weight: 600;
+        line-height: 18.52px;
+      }
+      .delete-btn{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+    /* li:last-child{
+      margin-bottom: 24px;
+    } */
+  }
+}
+
+.heading.cart-heading{
+  color: var(--red);
+  margin-bottom: 24px;
+}
+
+.cart-container .product > div{
+  display: flex;
+  gap: 8px;
+  span{
+    line-height: 18.52px;
+    font-size: var(--text-preset-4-size);
+    font-weight: 600;
+  }
+  .product-quantity{
+    color: var(--red);
+  }
+  .product-price{
+    color: var(--rose-500);
+    font-weight: 400;
+  }
+  .total-price{
+    color: var(--rose-500);
+  }
+}
+
+.order-total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  p{
+    color: var(--rose-900);
+  }
+  .order-total-text{
+    font-weight: 400;
+    font-size: var(--text-preset-4-size);
+    line-height: 18.52px;
+  }
+  .order-total-price{
+    font-weight: 700;
+    font-size: var(--text-preset-2-size);
+    line-height: 31.75px;
+  }
+}
+
+.cart-container .info-container{
+  background-color: var(--rose-50);
+  padding: 16px 23px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;
+  p{
+    color: var(--rose-900);
+    font-weight: 400;
+    font-size: var(--text-preset-4-size);
+    line-height: 18.52px;
+    .highlighted-text{
+      font-weight: 600;
+    }
+  }
+}
+
+.cart-container .confirm-btn-container{
+  text-align: center;
+}
+
+.cart-container .confirm-btn{
+  padding: 16px 85px;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--red);
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--spacing-200);
+  line-height: 21.17px;
+  text-wrap: nowrap;
+  cursor: pointer;
+  transition: all .5s;
+  &:hover{
+    background-color: rgba(199,59,15,.75);
+  }
+}
+
+.empty-cart-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+  p{
+    color: var(--rose-500);
+    line-height: 18.52px;
+    font-weight: 600;
+    font-size: var(--text-preset-4-size);
+  }
+}
+
+.added-cart-btn-container{
+  background-color: var(--red);
+  padding: 12px;
+  border-radius: 999px;
+  border: none;
+  color: #fff;
+  margin-top: -22px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+@media(width > 768px){
+
+  .modal-content{
+    bottom: initial !important;
+    padding: 40px !important;
+    top: 50%;
+    transform: translate(-50%,-50%) !important;
+    max-width: 688px;
+  }
+
+  .container{
+    padding: 40px;
+  }
+  .products-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    /* row-gap: 32px;
+    column-gap: 24px; */
+    gap: 32px 24px;
+  }
+}
+
+@media(width > 1200px){
+
+  .modal[open]{
+    max-width: 592px;
+  }
+
+  .container{
+    flex-direction: row;
+    align-items: baseline;
+    padding-block: 88px;
+  }
+}
+
+
+.modal[open]{
+  background-color: transparent;
+  padding: 0px;
+}
+
+.modal{
+  border: none;
+  width: 100%;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0 ,0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content{
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 12px;
+  padding: 40px 24px;
+  .header{
+    margin-bottom: 32px;
+    img{
+      margin-bottom: 24px;
+    }
+    p{
+      color: var(--rose-500);
+    }
+    .heading{
+      font-weight: 700;
+      font-size: var(--spacing-500);
+      line-height: 48px;
+      color: var(--rose-900);
+      margin-bottom: 8px;
+    }
+  }
+  .product-list{
+    background-color: var(--rose-50);
+    margin-bottom: 32px;
+    padding: 24px;
+  }
+  ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    margin-bottom: 24px;
+    li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--rose-100);
+    }
+  }
+}
+
+.modal .product{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  img{
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.modal .start-order-btn{
+  width: 100%;
+  border: none;
+  background-color: var(--red);
+  font-weight: 600;
+  font-size: var(--spacing-200);
+  line-height: 21.17px;
+  color: #fff;
+  padding-block: 16px;
+  border-radius: 999px;
+}
+
+.modal .product-name{
+  font-weight: 600;
+  font-size: var(--text-preset-4-size);
+  line-height: 18.52px;
+  color: var(--rose-900);
+  margin-bottom: 8px;
+}
+
+.modal .product-content > div{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .quantity{
+    color: var(--red);
+    font-weight: 600;
+    line-height: 18.52px;
+    font-size: var(--text-preset-4-size);
+  }
+
+  .price{
+    font-weight: 400;
+    color: var(--rose-500);
+    font-size: var(--text-preset-4-size);
+    line-height: 18.52px;
+  }
+}
