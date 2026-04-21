@@ -2,64 +2,154 @@
   {
     "id": 1,
     "image": "assets/images/products/waffle.png",
+    "section": "Desserts",
     "category": "Waffle",
     "name": "Waffle with Berries",
-    "price": 6.5
+    "price": 6.50
   },
   {
     "id": 2,
     "image": "assets/images/products/vanilla-bean.png",
+    "section": "Desserts",
     "category": "Crème Brûlée",
     "name": "Vanilla Bean Crème Brûlée",
-    "price": 7
-  },{
+    "price": 7.00
+  },
+  {
     "id": 3,
     "image": "assets/images/products/macaron.png",
+    "section": "Desserts",
     "category": "Macaron",
     "name": "Macaron Mix of Five",
-    "price": 8
+    "price": 8.00
   },
   {
     "id": 4,
     "image": "assets/images/products/tiramisu.png",
+    "section": "Desserts",
     "category": "Tiramisu",
     "name": "Classic Tiramisu",
-    "price": 5.5
+    "price": 5.50
   },
   {
     "id": 5,
     "image": "assets/images/products/baklava.png",
+    "section": "Desserts",
     "category": "Baklava",
     "name": "Pistachio Baklava",
-    "price": 4
+    "price": 4.00
   },
   {
     "id": 6,
     "image": "assets/images/products/lemon-meringue.png",
+    "section": "Desserts",
     "category": "Pie",
     "name": "Lemon Meringue Pie",
-    "price": 5
+    "price": 5.00
   },
   {
     "id": 7,
     "image": "assets/images/products/red-velvet.png",
+    "section": "Desserts",
     "category": "Cake",
     "name": "Red Velvet Cake",
-    "price": 4.5
+    "price": 4.50
   },
   {
     "id": 8,
     "image": "assets/images/products/salted-caramel.png",
+    "section": "Desserts",
     "category": "Brownie",
     "name": "Salted Caramel Brownie",
-    "price": 5.5
+    "price": 5.50
   },
   {
     "id": 9,
     "image": "assets/images/products/vanilla-panna.png",
+    "section": "Desserts",
     "category": "Panna Cotta",
     "name": "Vanilla Panna Cotta",
-    "price": 6.5
+    "price": 6.50
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop&q=80",
+    "section": "Starters",
+    "category": "Soup",
+    "name": "Lentil Soup",
+    "price": 4.50
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop&q=80",
+    "section": "Starters",
+    "category": "Salad",
+    "name": "Garden Salad",
+    "price": 6.00
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1579697096985-41fe1430e5df?w=400&h=300&fit=crop&q=80",
+    "section": "Starters",
+    "category": "Mezze",
+    "name": "Hummus Plate",
+    "price": 5.50
+  },
+  {
+    "id": 13,
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=300&fit=crop&q=80",
+    "section": "Starters",
+    "category": "Pastry",
+    "name": "Fried Cheese Rolls",
+    "price": 5.00
+  },
+  {
+    "id": 14,
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop&q=80",
+    "section": "Main Courses",
+    "category": "Pizza",
+    "name": "Margherita Pizza",
+    "price": 12.00
+  },
+  {
+    "id": 15,
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop&q=80",
+    "section": "Main Courses",
+    "category": "Burger",
+    "name": "Classic Burger",
+    "price": 13.50
+  },
+  {
+    "id": 16,
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop&q=80",
+    "section": "Main Courses",
+    "category": "Pasta",
+    "name": "Creamy Pasta",
+    "price": 11.00
+  },
+ 
+  {
+    "id": 19,
+    "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=400&h=300&fit=crop&q=80",
+    "section": "Drinks",
+    "category": "Cold Drink",
+    "name": "Fresh Lemonade",
+    "price": 4.00
+  },
+  {
+    "id": 20,
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=300&fit=crop&q=80",
+    "section": "Drinks",
+    "category": "Tea",
+    "name": "Brewed Tea",
+    "price": 2.00
+  },
+  {
+    "id": 21,
+    "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop&q=80",
+    "section": "Drinks",
+    "category": "Juice",
+    "name": "Fresh Orange Juice",
+    "price": 4.50
   }
-
 ]

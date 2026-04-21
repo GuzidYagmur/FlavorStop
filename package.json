@@ -1,0 +1,12 @@
+{
+  "name": "dessert-app",
+  "version": "1.0.0",
+  "description": "A dessert ordering app",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["dessert", "app"],
+  "author": "",
+  "license": "ISC"
+}
